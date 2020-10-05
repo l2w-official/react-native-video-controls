@@ -198,9 +198,9 @@ export default class VideoPlayer extends Component {
     state.loading = false;
     this.setState(state);
 
-    if (state.showControls) {
-      this.setControlTimeout();
-    }
+    // if (state.showControls) {
+    //   this.setControlTimeout();
+    // }
 
     if (typeof this.props.onLoad === 'function') {
       this.props.onLoad(...arguments);
